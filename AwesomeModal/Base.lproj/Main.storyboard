@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zyd-I8-WP9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsO-bB-Bb6">
                                 <rect key="frame" x="235" y="20" width="131" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -28,7 +32,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Returned Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR5-Wz-OZc">
-                                <rect key="frame" x="242" y="70" width="115" height="24"/>
+                                <rect key="frame" x="242.5" y="70" width="114.5" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,11 +40,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Zyd-I8-WP9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="12B-2Y-fQD"/>
+                            <constraint firstItem="Zyd-I8-WP9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3yL-RQ-vdT"/>
                             <constraint firstItem="RsO-bB-Bb6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4rP-Hx-WSj"/>
                             <constraint firstAttribute="centerX" secondItem="RsO-bB-Bb6" secondAttribute="centerX" constant="-0.5" id="7fh-iR-NhG"/>
                             <constraint firstItem="VR5-Wz-OZc" firstAttribute="top" secondItem="RsO-bB-Bb6" secondAttribute="bottom" constant="8" id="GbH-2G-SZ6"/>
+                            <constraint firstItem="Zyd-I8-WP9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J6r-t2-9US"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zyd-I8-WP9" secondAttribute="trailing" constant="-16" id="OZ7-yC-wgh"/>
+                            <constraint firstItem="Zyd-I8-WP9" firstAttribute="centerX" secondItem="RsO-bB-Bb6" secondAttribute="centerX" id="OvD-uW-MHL"/>
                             <constraint firstItem="VR5-Wz-OZc" firstAttribute="centerX" secondItem="RsO-bB-Bb6" secondAttribute="centerX" constant="-0.5" id="okh-Wm-gHY"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OvD-uW-MHL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="lReturnedText" destination="VR5-Wz-OZc" id="sRa-82-FSQ"/>
@@ -48,6 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="579" y="270"/>
         </scene>
         <!--Edit ItemVC-->
         <scene sceneID="dFy-Wr-I21">
@@ -88,6 +103,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="OK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -198,10 +214,11 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="p2T-7F-XLs" userLabel="Covering"/>
             </objects>
-            <point key="canvasLocation" x="1000" y="344"/>
+            <point key="canvasLocation" x="1228" y="270"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="1600" height="900"/>
         <image name="dismiss" width="120" height="81"/>
     </resources>
 </document>
