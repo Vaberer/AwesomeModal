@@ -1,5 +1,3 @@
-Demonstrating UIVisualEffects crated via Storyboard and custom transitions
-
 # AwesomeModal
 Custom Modal Window to change text
 
