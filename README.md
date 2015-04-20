@@ -5,7 +5,7 @@ Custom Modal Window to change text
 
 
 <p align="center">
-  <img src="https://github.com/Vaberer/AwesomeModal/blob/master/demo.gif" />
+  <img height="480" src="https://github.com/Vaberer/AwesomeModal/blob/master/demo.gif" />
 </p>
 
 Custom Modal Abstract Window with UITextfield input and custom transitions. 
