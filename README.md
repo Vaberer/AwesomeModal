@@ -1,5 +1,5 @@
 # AwesomeModal
-Custom Modal Window to change text
+A modal window for chaning text with custom transitions. Adjusted for all iOS screen sizes and landscape mode.
 
 
 
