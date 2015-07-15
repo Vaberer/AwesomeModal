@@ -1,8 +1,12 @@
 # AwesomeModal
+![Font Awesome Swift](https://github.com/Vaberer/Font-Awesome-Swift/blob/master/resources/opensource_matters.png)
+
+Follow me: [@vaberer](https://twitter.com/vaberer)
+
+I like &#9733;. Do not forget to &#9733; this project.
+
+
 A modal window for chaning text with custom transitions. Adjusted for all iOS screen sizes and landscape mode.
-
-
-
 
 <p align="center">
   <img height="480" src="https://github.com/Vaberer/AwesomeModal/blob/master/demo.gif" />
